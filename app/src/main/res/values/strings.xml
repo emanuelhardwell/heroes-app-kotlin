@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MySecondApp</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="height">height</string>
+    <string name="heightDefault">120 cm</string>
+    <string name="weight">weight</string>
+    <string name="weightAdd">weightAdd</string>
+    <string name="weightSubstract">weightSubstract</string>
+    <string name="age">age</string>
+    <string name="ageAdd">ageAdd</string>
+    <string name="ageSubstract">ageSubstract</string>
+    <string name="calculate">calculate</string>
+
+    <string name="recalculate">re-calculate</string>
+
+    <string name="weightLow">weightLow</string>
+    <string name="weightNormal">weightNormal</string>
+    <string name="weightHigh">weightHigh</string>
+    <string name="weightSuperHigh">weightSuperHigh</string>
+
+    <string name="weightLowDescription">Se encuentra dentro del rango de peso insuficiente.</string>
+    <string name="weightNormalDescription">Se encuentra dentro del rango de peso normal o saludable.</string>
+    <string name="weightHighDescription">Se encuentra dentro del rango de sobrepeso.</string>
+    <string name="weightSuperHighDescription">Se encuentra dentro del rango de obesidad.</string>
+
+    <!--TodoApp-->
+    <string name="todo_title">Bienvenido, Emanuel</string>
+    <string name="todo_categories">Categorías:</string>
+    <string name="todo_tasks">Tareas:</string>
+
+    <string name="todo_dialog_add_task">Añade la tarea</string>
+    <string name="todo_dialog_category_business">Negocios</string>
+    <string name="todo_dialog_category_other">Otros</string>
+    <string name="todo_dialog_category_personal">Personal</string>
+    <string name="todo_dialog_add_task_button">Crear tarea</string>
+
+</resources>
