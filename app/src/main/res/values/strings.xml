@@ -35,12 +35,4 @@
     <string name="todo_dialog_category_personal">Personal</string>
     <string name="todo_dialog_add_task_button">Crear tarea</string>
 
-    <!--SuperHeroApp-->
-    <string name="super_hero_combat">combat</string>
-    <string name="super_hero_durability">durability</string>
-    <string name="super_hero_intelligence">intelligence</string>
-    <string name="super_hero_power">power</string>
-    <string name="super_hero_speed">speed</string>
-    <string name="super_hero_strength">strength</string>
-
 </resources>
