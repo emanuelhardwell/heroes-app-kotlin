@@ -9,13 +9,9 @@ class SuperHeroViewHolder (view: View): RecyclerView.ViewHolder(view) {
 
     private var binding= ItemSuperheroBinding.bind(view)
 
-     fun bind(superHero: SuperHeroItem, onSelectedItem: (String) -> Unit) {
+     fun bind(superHero: SuperHeroItem) {
          binding.textViewSuperHeroName.text= superHero.name
          //binding.imageViewSuperHero
          Picasso.get().load(superHero.image.url).into(binding.imageViewSuperHero);
-
-         binding.cardViewSuperHero.setOnClickListener {
-             onSelectedItem(superHero.id)
-         }
     }
 }
