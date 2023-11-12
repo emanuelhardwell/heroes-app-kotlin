@@ -1,5 +1,6 @@
 package com.emanuel.mysecondapp.superhero
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -51,7 +52,7 @@ class SuperHeroListActivity : AppCompatActivity() {
 
         })
 
-        superHeroAdapter = SuperHeroAdapter()
+        superHeroAdapter = SuperHeroAdapter(){selectedSuperHero -> navigateToDetailSuperHero(selectedSuperHero)}
         binding.recyclerViewHero.setHasFixedSize(true)
         binding.recyclerViewHero.layoutManager= LinearLayoutManager(this)
         binding.recyclerViewHero.adapter= superHeroAdapter
@@ -82,6 +83,12 @@ class SuperHeroListActivity : AppCompatActivity() {
     private fun getRetrofit(): Retrofit {
         val retrofit= Retrofit.Builder().baseUrl("https://superheroapi.com/api/").addConverterFactory(GsonConverterFactory.create()).build()
         return retrofit
+    }
+
+    private fun navigateToDetailSuperHero(id: String){
+        val intent= Intent(this, DetailSuperHeroActivity::class.java)
+        intent.putExtra(DetailSuperHeroActivity.ID_SUPERHERO, id)
+        startActivity(intent)
     }
 
 }
