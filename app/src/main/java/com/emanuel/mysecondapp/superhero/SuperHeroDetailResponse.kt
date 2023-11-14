@@ -7,11 +7,17 @@ data class SuperHeroDetailResponse(
     @SerializedName("id") var id: String,
     @SerializedName("name") var name: String,
     @SerializedName("powerstats") var powerstats: SuperHeroPowerstats,
-    @SerializedName("image") val image: SuperHeroDetailImage
+    @SerializedName("image") val image: SuperHeroDetailImage,
+    @SerializedName("biography") val biography: Biography
 )
 
 data class SuperHeroDetailImage(
     @SerializedName("url") val url: String
+)
+
+data class Biography(
+    @SerializedName("full-name") val fullName: String,
+    @SerializedName("publisher") val publisher: String
 )
 
 data class SuperHeroPowerstats(
