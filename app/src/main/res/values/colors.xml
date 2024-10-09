@@ -34,4 +34,14 @@
     <color name="todo_personal_category">#00BCD4</color>
     <color name="todo_other_category">#4CAF50</color>
 
+    <!--SuperHeroApp-->
+    <color name="background_title_super_hero">#83151415</color>
+
+    <color name="super_hero_combat">#F44336</color>
+    <color name="super_hero_durability">#009688</color>
+    <color name="super_hero_intelligence">#9C27B0</color>
+    <color name="super_hero_power">#8BC34A</color>
+    <color name="super_hero_speed">#3F51B5</color>
+    <color name="super_hero_strength">#FFEB3B</color>
+
 </resources>
